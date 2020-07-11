@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <title>KeepTrack - Minimalist Journal Entry Application</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="twelve columns">
+            <div class="twelve columns"><a href="#" class="logo">KeepTrack</a></div>
+            <!-- <ul class="nav-list six columns">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fas fa-pencil-alt"></i> New Entry</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fas fa-book"></i> My Entries</a>
+                </li>
+            </ul> -->
+        </nav>
+    </div>
+    <div class="container">
+        <div class="title-entry twelve columns">
+            <input id="file-title" type="text" placeholder="Title">
+        </div>
+    </div>
+    <div class="container">
+        <div class="journal-entry twelve columns">
+            <textarea name="" id="text-area" placeholder="Today..."></textarea>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="twelve columns">
+            <div class="controls six columns">
+                <button class="button-primary submit six columns" value="save" id="save" type="button"><i class="fas fa-download"></i> Download Entry</button>
+                <button id="clear" class="six columns">Clear All</button>
+            </div>
+            <div class="about six columns">
+                <p class="about-text"><i class="fas fa-book"></i> KeepTrack - Minimalist Journal App</p>
+                <p class="about-text" id="date"></p>
+            </div>
+        </footer>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
